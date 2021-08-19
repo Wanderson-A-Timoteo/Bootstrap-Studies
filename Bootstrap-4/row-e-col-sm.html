@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <title>Row e Col-sm | Bootstrap 4</title>
+  </head>
+  <body>
+    <h1>Classe "Row e Col-sm"</h1>
+    <p>
+      Neste exemplo criamos um container que define uma caixa centralizada ao
+      meio deixando margem automatico dos lados esquerdo e direito. <br />
+      Depois criamos outra caixa (row) que alinhará os objetos dentro dela em
+      linha, e dentro desta caixa row foi criado outras 3 caixas (col-sm) que se
+      ajustam ao tamanho da caixa pai row de forma automatica dividindo o
+      tamanho da tela entre as 3 caixas col-sm. <br />
+    </p>
+    <p>
+      Simulando dispositivo mobile, a definição de col-sm fará quebra das caixas
+      col-sm e se ajustará como coluna após a tela do dispositivo atingir 575px.
+    </p>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col-sm" style="background-color: rgb(157, 255, 0)">
+          Coluna 01
+        </div>
+        <div class="col-sm" style="background-color: rgb(43, 174, 226)">
+          Coluna 02
+        </div>
+        <div class="col-sm" style="background-color: rgba(180, 33, 209, 0.918)">
+          Coluna 03
+        </div>
+      </div>
+    </div>
+
+    <script text="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
