@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <style type="text/css">
+      .row [class^='col-'],
+      .row .col {
+        background-color: #ddd;
+        border: 1px solid #ccc;
+      }
+      .row {
+        background-color: #ff9999;
+        padding: 15px;
+      }
+    </style>
+
+    <title>Grid - JustifyContent e AlignItems | Bootstrap 4</title>
+  </head>
+  <body>
+    <h1>Grid - JustifyContent e AlignItems</h1>
+    <h2>justify-content-start</h2>
+    <p>
+      Neste exemplo foi definido "justify-content-start", nas colunas foi
+      especificado o tamanho 3, ou seja, a tela ocupa 12 espaços, como temos 3
+      colunas cada uma ficara com 3 de 12, porém não muda nada pois por padrão
+      as colunas já vem com "justify-content-start".
+    </p>
+    <!--  -->
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-3">Coluna 01</div>
+        <div class="col-3">Coluna 02</div>
+        <div class="col-3">Coluna 03</div>
+      </div>
+    </div>
+    <br />
+    <h2>justify-content-center</h2>
+    <br />
+    <p>
+      Neste exemplo usando as mesmas definições, percebemos que as colunas foi
+      alinhadas ao meio da row
+    </p>
+    <br />
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-3">Coluna 01</div>
+        <div class="col-3">Coluna 02</div>
+        <div class="col-3">Coluna 03</div>
+      </div>
+    </div>
+    <h2>justify-content-end</h2>
+    <br />
+    <p>
+      Neste exemplo usando as mesmas definições, percebemos que as colunas foi
+      alinhadas ao final da row
+    </p>
+    <br />
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-3">Coluna 01</div>
+        <div class="col-3">Coluna 02</div>
+        <div class="col-3">Coluna 03</div>
+      </div>
+    </div>
+    <h2>justify-content-around</h2>
+    <br />
+    <p>
+      Neste exemplo usando as mesmas definições, percebemos que as colunas foi
+      alinhadas envolta da row
+    </p>
+    <br />
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-3">Coluna 01</div>
+        <div class="col-3">Coluna 02</div>
+        <div class="col-3">Coluna 03</div>
+      </div>
+    </div>
+    <br />
+    <h2>justify-content-between</h2>
+    <br />
+    <p>
+      Neste exemplo usando as mesmas definições, percebemos que as colunas foi
+      alinhadas envolta da row com espaçamentos iguais entre as colunas
+    </p>
+    <br />
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-3">Coluna 01</div>
+        <div class="col-3">Coluna 02</div>
+        <div class="col-3">Coluna 03</div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <script text="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
