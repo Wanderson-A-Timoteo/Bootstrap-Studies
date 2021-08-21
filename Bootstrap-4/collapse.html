@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <style>
+      #area,
+      #area2 {
+        background-color: #eeeeee;
+        padding: 20px;
+        border: 1px solid #000;
+      }
+    </style>
+    <title>Collapse| Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Collapse</h1>
+      <p>
+        Neste exemplo vamos criar um botão que ao ser clicado mostrará ou
+        esconderá uma parte de conteúdo definida. Para fazer este efeito
+        precisamos definir o data-toggle="collapse" e indicar qual será o
+        conteúdo usando o ID que esta classe data-toggle="collapse" vai alterar
+        para esconder ou para mostrar usando data-target="ID do conteúdo
+        referenciado"
+      </p>
+      <button
+        class="btn btn-primary"
+        data-toggle="collapse"
+        data-target="#area"
+      >
+        Mostrar/Esconder
+      </button>
+      <div id="area" class="collapse">
+        Este é o texto que vai aparecer ao clicar no botão. Mas po ser uma foto,
+        até mesmo uma página inteira.
+      </div>
+    </div>
+
+    <script text="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
