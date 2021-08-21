@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <style>
+      #area,
+      #area2 {
+        background-color: #eeeeee;
+        padding: 20px;
+        border: 1px solid #000;
+      }
+    </style>
+    <title>Collapse| Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Accordion</h1>
+      <p>
+        Diferentemente do collapse este modelo, mostra o conteudo ou esconde, porém quando clicado 
+        para mostrar o conteúdo de um botão, quando clicamos em outro botão para ver o seu conteúdo, 
+        automaticamente o conteúdo anterior e escondido, ou seja, só mostra o conteúdo de apenas um botão por vez.
+      </p>
+      <p>
+        Neste exemplo vamos criar um botão tipo link que ao ser clicado mostrará o conteúdo ou esconderá 
+        o conteúdo. Para fazer este efeito precisamos definir o data-toggle="collapse" e indicar qual será o
+        conteúdo usando o ID que esta classe data-toggle="collapse" vai alterar para esconder ou para 
+        mostrar usando data-target="ID do conteúdo referenciado". 
+        <p>
+          Ainda precisamos definir que o boão será o responsável de esconder o conteúdo em ID com 
+          aria-controls=c1, neste não podemos colocar #. 
+        </p>
+        
+      </p>
+      <br />
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#c1"
+              aria-controls="c1"
+            >
+              Título do card 01
+            </button>
+          </div>
+          <div id="c1" class="collapse show" data-parent="#accordion">
+            <div class="card-body"> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, 
+              voluptatum in. Ad similique eveniet corporis quibusdam velit eligendi et minus, nam tempore 
+              commodi earum placeat quis inventore necessitatibus, voluptas fugiat? 
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+          <div class="card-header">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#c2"
+              aria-controls="c2"
+            >
+              Título do card 02
+            </button>
+          </div>
+          <div id="c2" class="collapse" data-parent="#accordion">
+            <div class="card-body"> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, 
+              voluptatum in. Ad similique eveniet corporis quibusdam velit eligendi et minus, nam tempore 
+              commodi earum placeat quis inventore necessitatibus, voluptas fugiat? 
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+          <div class="card-header">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#c3"
+              aria-controls="c3"
+            >
+              Título do card 03
+            </button>
+          </div>
+          <div id="c3" class="collapse" data-parent="#accordion">
+            <div class="card-body"> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, 
+              voluptatum in. Ad similique eveniet corporis quibusdam velit eligendi et minus, nam tempore 
+              commodi earum placeat quis inventore necessitatibus, voluptas fugiat? 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script text="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
