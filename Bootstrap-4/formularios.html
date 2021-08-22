@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <title>Formulários| Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <form method="POST">
+        <h4>Sem Bootstrap</h4>
+
+        <h1>Efetuar Login</h1>
+        <div class="form-group">
+        E-mail: <br>
+        <input type="email" name="email" />
+        <br />
+        Senha:
+        <br />
+        <input type="password" name="password" />
+        <br />
+        <br />
+        <input type="submit" value="Entrar" />
+        <br />
+      </form>
+      <hr />
+      <h4>Com Bootstrap</h4>
+      <form method="POST">
+        <h1>Efetuar Login</h1>
+        <div class="form-group">
+          <label for=""> E-mail: </label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"/>
+        </div>
+        <div class="form-group">
+          <label for=""> Senha: </label>
+          <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"/>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Entrar" />
+        </div>
+      </form>
+      <hr />
+      <h4>Com Bootstrap e campos pequeno ou grande</h4>
+      <form method="POST">
+        <h1>Efetuar Login</h1>
+        <div class="form-group">
+          <label for=""> E-mail: </label>
+          <input type="email" name="email" id="email" class="form-control form-control-sm" placeholder="E-mail"/>
+        </div>
+        <div class="form-group">
+          <label for=""> Senha: </label>
+          <input type="password" name="senha" id="senha" class="form-control form-control-lg" placeholder="Senha"/>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Entrar" />
+        </div>
+      </form>
+      <hr />
+      <h4>Com Bootstrap e readonly, campo desativado apenas de leitura</h4>
+      <form method="POST">
+        <h1>Efetuar Login</h1>
+        <div class="form-group">
+          <label for=""> E-mail: </label>
+          <input type="email" name="email" id="email" class="form-control" 
+          placeholder="E-mail" value="exemplo@gmail.com" readonly/>
+        </div>
+        <div class="form-group">
+          <label for=""> Senha: </label>
+          <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"/>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Entrar" />
+        </div>
+      </form>
+      <hr />
+      <h4>Com Bootstrap e readonly, campo desativado apenas de leitura e form-control-plaintext </h4>
+      <form method="POST">
+        <h1>Efetuar Login</h1>
+        <div class="form-group">
+          <label for=""> E-mail: </label>
+          <input type="email" name="email" id="email" class="form-control-plaintext" 
+          placeholder="E-mail" value="exemplo@gmail.com" readonly/>
+        </div>
+        <div class="form-group">
+          <label for=""> Senha: </label>
+          <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"/>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Entrar" />
+        </div>
+      </form>
+      <hr />
+      <h4>Formulário um ao lado do outro com classe "form-inline" </h4>
+      <h1>Efetuar Login</h1>
+        <br>
+      <form method="POST" class="form-inline">
+        <div class="form-group">
+          <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"/>
+        </div>
+        <div class="form-group">
+          <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"/>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="Entrar" />
+        </div>
+      </form>
+      <hr>
+      <br>
+      <h1>Formulário com duas colunas um ao lado do outro com classe "form-row" indicando uma linha 
+        e "col" indicando a coluna</h1>
+      <br>
+      <h1>Efetuar Login</h1>
+      <form method="POST">
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"/>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <input class="btn btn-primary" type="submit" value="Entrar" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <br>
+      <h1>Formuláriocom 3 colunas um ao lado do outro com classe "form-row" indicando uma linha 
+        e "col" indicando a coluna</h1>
+      <br>
+      <h1>Efetuar Login</h1>
+      <form method="POST">
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <input type="text" name="nome" id="nome" class="form-control" placeholder="Nome"/>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <input type="email" name="email" id="email" class="form-control" placeholder="E-mail"/>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <input type="password" name="senha" id="senha" class="form-control" placeholder="Senha"/>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <div class="form-group">
+              <input class="btn btn-primary" type="submit" value="Entrar" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script text="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
