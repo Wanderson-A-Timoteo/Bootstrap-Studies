@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <title>NavBar | Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Navbar criado com div</h1>
+      <p>
+        Definimos "navbar-light" para ficar claro e Background "bg-light". Desta
+        forma a navbar fica levemente com uma cor de fundo.
+      </p>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a href="#" class="nvbar-brand">LogoEmpresa</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link active">Link 01</a>
+            <a href="#" class="nav-item nav-link">Link 02</a>
+            <a href="#" class="nav-item nav-link">Link 03</a>
+            <a href="#" class="nav-item nav-link">Link 04</a>
+          </div>
+        </div>
+        <form method="POST" class="form-inline">
+          <input type="text" class="form-control" placeholder="Pesquisar" />
+        </form>
+      </nav>
+      <br />
+      <hr />
+      <br />
+      <h1>Navbar com background</h1>
+      <p>
+        Quando definimos um background escuro precisamos definir a
+        "navbar-dark", para os links aparecerem.
+      </p>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #666666"
+      >
+        <a href="#" class="nvbar-brand">LogoEmpresa</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarMenu">
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link active">Link 01</a>
+            <a href="#" class="nav-item nav-link">Link 02</a>
+            <a href="#" class="nav-item nav-link">Link 03</a>
+            <a href="#" class="nav-item nav-link">Link 04</a>
+          </div>
+        </div>
+        <form method="POST" class="form-inline">
+          <input type="text" class="form-control" placeholder="Pesquisar" />
+        </form>
+      </nav>
+      <br />
+      <hr />
+      <br />
+    </div>
+
+    <script text="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
