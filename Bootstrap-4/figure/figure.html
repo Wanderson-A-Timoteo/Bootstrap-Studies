@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <style>
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+
+    <title>Figure | Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Classe figure</h2>
+      <br />
+      <p>
+        Neste exemplo com a classe "figure", é preparada para receber uma imagem
+        e um pequeno texto explicativo sobre a figura.
+      </p>
+      <br />
+      <h3>Texto alinhado a esquerda, é o padrão</h3>
+      <figure class="figure">
+        <img
+          src="assets/images/img02.jpg"
+          alt=""
+          class="figure-img img-fluid"
+        />
+        <figcaption class="fig-caption">Imagem com IA da internet</figcaption>
+      </figure>
+      <br />
+      <h3>Texto alinhado a direita com text-right</h3>
+      <figure class="figure">
+        <img
+          src="assets/images/img02.jpg"
+          alt=""
+          class="figure-img img-fluid"
+        />
+        <figcaption class="fig-caption text-right">
+          Imagem com IA da internet
+        </figcaption>
+      </figure>
+      <br />
+      <h3>Com bordas aredondadas com rounded</h3>
+      <figure class="figure">
+        <img
+          src="assets/images/img02.jpg"
+          alt=""
+          class="figure-img img-fluid rounded"
+        />
+        <figcaption class="fig-caption">Imagem com IA da internet</figcaption>
+      </figure>
+      <br />
+      <h3>
+        Bordas aredondadas com rounded e borda em toda foto com img-thumbnail
+      </h3>
+      <p>
+        A classe rounded apesar de aplicado no código, ele não foi reconhecido,
+        por isso, a imagem não ficou com as bordas arodondadas.
+      </p>
+      <figure class="figure">
+        <img
+          src="assets/images/img02.jpg"
+          alt=""
+          class="figure-img img-fluid img-thumbnail rounded"
+        />
+        <figcaption class="fig-caption">Imagem com IA da internet</figcaption>
+      </figure>
+    </div>
+    <script text="text/javascript" src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="../assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <title>Modal Centralizado | Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Modal Centralizado</h1>
+      <p>
+        O modal tem um tamanho padrão, mas podemos alterar este usando a classe
+        "modal-lg", para ele ficar maior.
+      </p>
+      <p>
+        Modal é uma janela que pode aparecer em cima ou que abre no meio da
+        tela, para isso é preciso javascript.
+      </p>
+      <p>
+        O responsável pela nosa janela é o "modal-dialog", por padrão ele vem ao
+        clicar ele se abre na janela acima, mas podemos definir para abrir no
+        meio da janela definindo "modal-dialog-centered".
+      </p>
+
+      <button class="btn btn-primary" data-toggle="modal" data-target="#janela">
+        Clique aqui para abrir o modal
+      </button>
+
+      <div class="modal fade" id="janela">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <!--Cabeçalho do modal-->
+            <div class="modal-header">
+              <h5>Título do modal</h5>
+            </div>
+            <!--Corpo ou conteúdo do modal-->
+            <div class="modal-body">
+              Conteúdo do modal que mostrará uma informação da ação que o
+              usuário fez.
+            </div>
+            <!--Rodapé do modal-->
+            <div class="modal-footer">Rodapé</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script text="text/javascript" src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="../assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

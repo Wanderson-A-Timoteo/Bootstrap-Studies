@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <title>Grid | Orrdenação de Colunas | Bootstrap 4</title>
+
+    <style type="text/css">
+      .row [class^='col-'],
+      .row .col {
+        background-color: #ddd;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid - Ordenação de Colunas</h1>
+    <h2>Classe "Col order-first"</h2>
+    <p>
+      Podemos fazer a ordenação das colunas da forma que desejamos, neste
+      exemplo, a segunda coluna foi para o final com a definição de order-last e
+      a coluna 6 que seria a ultima foi para primeiro com a definição
+      order-first
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col">Coluna 01</div>
+        <div class="col order-last">Coluna 02</div>
+        <div class="col">Coluna 03</div>
+        <div class="col">Coluna 04</div>
+        <div class="col">Coluna 05</div>
+        <div class="col order-first">Coluna 06</div>
+      </div>
+    </div>
+    <br />
+    <p>
+      Também podemos realizar a ordenação de forma especifica usando order
+      seguido de um número, por exemplo, order-1, order-2 etc. Neste caso a
+      coluna ordenada, será ordenada após as não ordenadas pois as NÃO ORDENADAS
+      tem prioridade, sobre as ordenadas, como mostra nas colunas abaixo. A
+      coluna 1 recebeu a definição order-1 e a coluna 3 recebeu order-1.
+    </p>
+    <br />
+    <h2>Ordenação especifica por order-1, order-2....</h2>
+    <p>
+      Neste exemplo todas as colunas estão ordenadas em sequencia, como coluna
+      01 order-1, coluna 02 order-2 até coluna 06 order-6.
+    </p>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="col order-1">Coluna 01</div>
+        <div class="col order-2">Coluna 02</div>
+        <div class="col order-3">Coluna 03</div>
+        <div class="col order-4">Coluna 04</div>
+        <div class="col order-5">Coluna 05</div>
+        <div class="col order-6">Coluna 06</div>
+      </div>
+    </div>
+    <br />
+    <h2>Ordenação especifica por order-1, order-2....</h2>
+    <p>
+      Desta forma foi ordenado primeiro as colunas sem ordenação e depois alocou
+      as colunas ordenadas de acordo com sua prioridade 1 e 2.
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col order-2">Coluna 01</div>
+        <div class="col">Coluna 02</div>
+        <div class="col order-1">Coluna 03</div>
+        <div class="col">Coluna 04</div>
+        <div class="col">Coluna 05</div>
+        <div class="col">Coluna 06</div>
+      </div>
+    </div>
+    <script text="text/javascript" src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script
+      text="text/javascrip"
+      src="../assets/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>

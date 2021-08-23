@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link do Bootstrap 4 -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+    <title>Tooltip | Bootstrap 4</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tooltip</h1>
+      <p>
+        Tool=Ferramneta <br />
+        Tip=Dica <br />
+        Tooltip é uma janelinha com uma mensagem que aparece quando passamos o
+        mouse sobre o item que possui esta ação. <br />
+        Para funcionar precisamos da função javascript.
+        <code>
+          $(function () { $(' [ data-toggle="tooltip" ] ').tooltip() })
+        </code>
+        .
+      </p>
+      <p>
+        A classe "data-placemenet="", é a responsável por dizer em qual direção
+        aparecerá a janelinha com a dica. quando não inserimos esta classe o
+        sistema mostrará de forma automatica na direção que melhor se ajusta na
+        tela.
+      </p>
+      <br />
+      <button
+        class="btn btn-success"
+        data-toggle="tooltip"
+        title="Ao clicar no botão, irá salvar os dados do usuário"
+      >
+        Salvar
+      </button>
+      <br />
+      <hr />
+      <br />
+      <h1>Tooltip abaixo</h1>
+      <p>Tooltip aparece do lado direito usando "data-placemenet="bootom"</p>
+      <br />
+      <button
+        class="btn btn-success"
+        data-toggle="tooltip"
+        data-placement="bottom"
+        title="Ao clicar no botão, irá salvar os dados do usuário"
+      >
+        Salvar
+      </button>
+      <br />
+      <hr />
+      <br />
+      <h1>Tooltip esquerdo</h1>
+      <p>Tooltip aparece do lado direito usando "data-placemenet="left"</p>
+      <br />
+      <button
+        class="btn btn-success"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Ao clicar no botão, irá salvar os dados do usuário"
+      >
+        Salvar
+      </button>
+      <br />
+      <hr />
+      <br />
+      <h1>Tooltip acima</h1>
+      <p>Tooltip aparece do lado direito usando "data-placemenet="top"</p>
+      <br />
+      <button
+        class="btn btn-success"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Ao clicar no botão, irá salvar os dados do usuário"
+      >
+        Salvar
+      </button>
+      <br />
+      <hr />
+      <br />
+      <h1>Tooltip esquerdo</h1>
+      <p>Tooltip aparece do lado direito usando "data-placemenet="left"</p>
+      <br />
+      <button
+        class="btn btn-success"
+        data-toggle="tooltip"
+        data-placement="left"
+        title="Ao clicar no botão, irá salvar os dados do usuário"
+      >
+        Salvar
+      </button>
+      <br />
+      <hr />
+      <br />
+      <h1>Tooltip direita</h1>
+      <p>Tooltip aparece do lado direito usando "data-placemenet="right"</p>
+      <br />
+      <button
+        class="btn btn-success"
+        data-toggle="tooltip"
+        data-placement="right"
+        title="Ao clicar no botão, irá salvar os dados do usuário"
+      >
+        Salvar
+      </button>
+      <br />
+      <br />
+      <br />
+    </div>
+
+    <script
+      text="text/javascript"
+      src="../assets/js/jquery-3.6.0.min.js"
+    ></script>
+    <script
+      text="text/javascrip"
+      src="../assets/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Script para o Tooltip funcionar -->
+    <script type="text/javascript">
+      $(function () {
+        $(' [ data-toggle="tooltip" ] ').tooltip()
+      })
+    </script>
+  </body>
+</html>
